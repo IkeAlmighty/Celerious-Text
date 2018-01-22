@@ -20,7 +20,6 @@ import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-@Deprecated
 public class AutoViewer extends JFrame{
 
     // private JFrame mainFrame;
@@ -109,6 +108,10 @@ public class AutoViewer extends JFrame{
 
         //set frame visible:
         super.setVisible(true);
+    }
+
+    public void setWordSuggestions(ArrayList<String> suggestions){
+        editArea.setWordSuggestions(suggestions);
     }
 
     @Override
